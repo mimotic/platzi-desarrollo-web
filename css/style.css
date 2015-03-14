@@ -7,19 +7,76 @@
 }
 */
 
+/**************************
+	Selector id
+**************************/
+/*
+#topbar {
+	background-color: yellow;
+}
+*/
 
 /**************************
 	Selector elemento
 **************************/
-h1 {
+h1, .h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	color: maroon;
+}
+h2, .h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: green;
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 /**************************
 	Selector clase
 **************************/
-.article-header {
+.article {
 	font-family: Arial, Helvetica, sans-serif;
-	color: maroon;
 }
+	.article__header {
+		font-family: Arial, Helvetica, sans-serif;
+		color: green;
+	}
+	.article--bgblue {
+		background-color: blue;
+	}
+
+.background-amarillo {
+	background-color: yellow;
+}
+
+li[data-RobotOwner="Mo"] {
+	background-color: blue;
+	color: white;
+}
+li[data-RobotOwner="Mi"] {
+	background-color: olive;
+	color: white;
+}
+
+input[type="email"]:valid{
+	background-color: green;
+}
+input[type="email"]:invalid{
+	background-color: red;
+}
+
+.toggle:checked + .cuadrao{
+	border-radius: 10px;
+}
+
+.cuadrao {
+	height: 100px;
+	width: 100px;
+	background-color: purple;
+	margin-bottom: 3px;
+}
+
+
+
+
+
+
