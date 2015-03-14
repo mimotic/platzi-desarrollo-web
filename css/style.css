@@ -50,11 +50,17 @@ h2, .h2 {
 
 li[data-RobotOwner="Mo"] {
 	background-color: blue;
-	color: white;
 }
 li[data-RobotOwner="Mi"] {
 	background-color: olive;
+}
+li[data-RobotOwner="Mo"] a{
 	color: white;
+	text-decoration: none;
+}
+li[data-RobotOwner="Mi"] a{
+	color: white;
+	text-decoration: none;
 }
 
 input[type="email"]:valid{
