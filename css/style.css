@@ -64,10 +64,12 @@ input[type="email"]:invalid{
 	background-color: red;
 }
 
-.toggle:checked + .cuadrao{
+.toggle:checked + div.cuadrao{
+	border-radius: 100px;
+}
+.toggle:checked ~ .cuadrao{
 	border-radius: 10px;
 }
-
 .cuadrao {
 	height: 100px;
 	width: 100px;
