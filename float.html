@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo float</title>
+  <style type="text/css">
+
+  		html{
+  			display: table;
+  		}
+
+  		.cuadrao1, .cuadrao2, .cuadrao3 {
+  			height: 100px;
+			width: 100px;
+			margin: 3px;
+  		}
+
+		.cuadrao1 {
+			display: none;
+			float: left;
+			clear:both;
+			background-color: purple;
+		}
+		.cuadrao1:first-child{
+			clear:both;
+		}
+
+		.cuadrao2 {
+			float:right;
+			background-color: peru;
+		}
+
+		.cuadrao3 {
+			display: none;
+			float: none;
+			background-color: green;
+		}
+		ul {
+			display: table;
+		}
+		li{
+			display: table-cell;
+		}
+		nav > ul li{
+			list-style: none;
+			border: solid 1px black;
+			padding: 1em;
+			background-color: olive;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		nav > ul li:hover{
+			background: red;
+		}
+		nav > ul li a{
+			color: white;
+			text-decoration: none;
+		}
+  </style>
+</head>
+<body>
+	<header>
+		<nav>
+	  		<ul>
+		  		<li><a href="" title="seccion1">Android</a></li>
+		  		<li><a href="" title="seccion2">iOS</a></li>
+		  		<li><a href="" title="seccion3">Javascript</a></li>
+		  		<li><a href="" title="seccion4">Titanium</a></li>
+	  		</ul>
+	  	</nav>
+	</header>
+
+	<section>
+		<div class="cuadrao1">1</div>
+	  	<div class="cuadrao1">2</div>
+	  	<div class="cuadrao1">3</div>
+	  	<div class="cuadrao1">4</div>
+	</section>
+
+
+	<section>
+		<div class="cuadrao2">1</div>
+	  	<div class="cuadrao2">2</div>
+	  	<div class="cuadrao2">3</div>
+	  	<div class="cuadrao2">4</div>
+	  	<div class="cuadrao2">1</div>
+	  	<div class="cuadrao2">2</div>
+	  	<div class="cuadrao2">3</div>
+	  	<div class="cuadrao2">4</div>
+	  	<div class="cuadrao2">1</div>
+	  	<div class="cuadrao2">2</div>
+	  	<div class="cuadrao2">3</div>
+	  	<div class="cuadrao2">4</div>
+	</section>
+
+
+	<section>
+		<div class="cuadrao3">1</div>
+	  	<div class="cuadrao3">2</div>
+	  	<div class="cuadrao3">3</div>
+	  	<div class="cuadrao3">4</div>
+	</section>
+
+
+
+</body>
+</html>

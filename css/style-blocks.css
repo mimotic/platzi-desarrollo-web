@@ -1,0 +1,21 @@
+.mitabla{
+	display: table;
+}
+
+header{
+ 	display: table-caption;
+}
+
+section{
+	display: table-cell;
+	padding: 10px;
+	width: 80%;
+	background-color: peru;
+}
+
+aside{
+	display: table-cell;
+	text-align: center;
+	width: 20%;
+	background-color: aqua;
+}
