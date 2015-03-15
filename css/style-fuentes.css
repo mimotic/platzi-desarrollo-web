@@ -1,6 +1,13 @@
 
 html{
 	font-family: 'Lato', sans-serif;
+	font-size: 110%;
+}
+
+@media all and (min-width: 400px){
+	html{
+		font-size: 80%;
+	}
 }
 
 body{
@@ -14,3 +21,11 @@ body{
 	color: white;
 	padding: 4em;
 }
+	.main-header h1{
+		margin:0;
+	}
+
+	.main-header h2{
+		font-size: 1rem;
+		font-weight: normal;
+	}
