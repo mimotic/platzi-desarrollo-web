@@ -19,6 +19,9 @@
 /**************************
 	Selector elemento
 **************************/
+html{
+	font-size:100%;
+}
 h1, .h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	color: maroon;
@@ -29,7 +32,12 @@ h2, .h2 {
 	font-size: 24px;
 	font-size: 1.5rem;
 }
-
+h1 a{
+	font-size: .6em;
+}
+a {
+	font-size: 1rem;
+}
 /**************************
 	Selector clase
 **************************/
@@ -82,3 +90,51 @@ input[type="email"]:invalid{
 	background-color: purple;
 	margin-bottom: 3px;
 }
+
+li{
+	list-style: none;
+}
+li::before{
+	content:"➡︎ ";
+	font-size: .8em;
+	color:red;
+}
+
+.square{
+	height: 1em;
+	width: 1em;
+	background-color: peru;
+	font-size: 50px;
+}
+	.square::after{
+		content: "";
+		height: .5em;
+		width: .5em;
+		background-color: purple;
+		position: absolute;
+		margin-top: .25em;
+		margin-left: .25em;
+	}
+
+.container{
+	width: 80%;
+}
+.unidades ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: peru;
+	height: 50vh;
+	width: 50vw;
+}
+
+.unidades li{
+	background-color: aqua;
+	height: 20vh;
+	border-bottom: maroon 1px solid;
+}
+	.unidades li:nth-child(2n-1){
+		background-color: peru;
+	}
+
+

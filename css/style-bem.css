@@ -1,0 +1,87 @@
+/*.persona{...}
+	.persona__brazo{...}
+	.persona__pie{...}
+		.persona__pie--izquierdo{..}
+	.persona--chino{...}*/
+
+body{
+	margin:0;
+	padding: 0;
+}
+
+.centrar{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.weather-card {
+	background-color: #80EAE8;
+	padding: .5em;
+}
+	.weather-card__header{
+		margin:0;
+	}
+
+	.weather-card__date{
+		font-weight: normal;
+		font-size: 12px;
+		font-family: courier;
+		margin: 0 0 .5em 0;
+		border-bottom: 1px solid #D380EA;
+		display: block;
+	}
+
+	.weather-card__footer{
+		margin: 0;
+		padding: 0;
+		list-style-type:none;
+	}
+
+	.weather-card__footer__item{
+
+	}
+
+	.temperatura::after{
+		content: attr(data-unidad);
+		font-size: .8em;
+		font-family: courier;
+		color: maroon;
+		margin-left: .2em;
+	}
+
+
+
+
+
+.mip{
+	color: #999;
+}
+
+	.mip::first-letter{
+		text-transform: uppercase;
+		font-size: 3em;
+		color: black;
+	}
+
+.mispan{
+	font-size: 1rem;
+	position: relative;
+}
+
+	.mispan::before{
+		content: "*";
+	}
+
+	.mispan::after{
+		content: "2";
+		font-size: .6em;
+		position: absolute;
+		top: -6px;
+	}
+
+
+
+
