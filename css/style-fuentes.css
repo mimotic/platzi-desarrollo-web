@@ -2,11 +2,19 @@
 html{
 	font-family: 'Lato', sans-serif;
 	font-size: 110%;
+	background-color: white;
 }
 
-@media all and (min-width: 400px){
+@media all and (min-width: 500px) and (max-width: 700px){
 	html{
 		font-size: 80%;
+		background-color: red;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:2), (min-resolution: 120dpi) {
+	html{
+		font-size: 120%;
 	}
 }
 
@@ -29,3 +37,26 @@ body{
 		font-size: 1rem;
 		font-weight: normal;
 	}
+
+	@media all and (orientation: landscape) {
+		h1::before{
+			content:'landscape: ';
+		}
+		.main-header{
+			background-color: olive;
+		}
+	}
+
+.weather-card{
+	height: 30vh;
+	width: 100%;
+	background: url('http://media.tumblr.com/81e9b03b6f17174dc8fb653397d84af2/tumblr_inline_njxzlifX3h1smb32u.jpg') center top no-repeat;
+	background-size: 100%;
+}
+	.fuente-blanco{
+		color: white;
+	}
+	.fuente-blanco a{
+		color: white;
+	}
+
