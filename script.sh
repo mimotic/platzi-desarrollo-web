@@ -1,6 +1,6 @@
 #!/bin/sh
-git status
+touch README2.txt
 git add -A
 git commit -m 'auto shell script'
 git push origin master
-git status
+echo 'fin del autoscript de la hostia'
