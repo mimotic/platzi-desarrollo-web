@@ -6,12 +6,40 @@
    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style-fuentes.css">
+
 </head>
 <body>
-	<header>
+	<header class="main-header">
 		<h1>Ejemplo JS</h1>
+		<h2>An awesome way to see the weather</h2>
 	</header>
 
+	<main class="weather-cards-group">
+
+		<template id="template--city">
+
+			<div class="weather-card">
+				<header class="weather-card__header">
+					<h3 class="weather-card__title"></h3>
+					<h4 class="weather-card__date"></h4>
+				</header>
+				<div class="weather-card__info">
+					<img src="" alt="" class="weather-card_image">
+					<span class="weather-card__maxt"></span>
+					<span class="weather-card__mint"></span>
+					<span class="weather-card__temp"></span>
+				</div>
+			</div>
+
+		</template>
+
+	</main>
+
+
+
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  	<script src="js/functions.js"></script>
+  	<!-- <script src="js/clousure.js"></script> -->
 
 </body>
 </html>
