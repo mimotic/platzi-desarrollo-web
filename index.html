@@ -14,7 +14,16 @@
 		<h2>An awesome way to see the weather</h2>
 	</header>
 
-	<div class="loader">Geolocalizando tu posicion, por favor espere...</div>
+	<div class="loader">
+		<p>Geolocalizando tu posicion, por favor espere...
+		</p>
+	</div>
+
+	<form action="" class="search">
+		<input type="text" data-input="cityAdd" class="search__text" placeholder="Agregar nueva ciudad">
+		<input type="submit" data-button="add" class="search__btn btn" value="Añadir nueva ciudad">
+		<button data-saved-cities class="search_btn btn">Ver ciudades guardadas</button>
+	</form>
 
 	<main class="weather-cards-group">
 
