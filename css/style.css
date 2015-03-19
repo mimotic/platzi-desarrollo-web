@@ -137,4 +137,14 @@ li::before{
 		background-color: peru;
 	}
 
-
+.persona{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 10px solid #DDD;
+	border-radius: 50%;
+}
+.persona img{
+	width: 100%;
+	height: auto;
+}
