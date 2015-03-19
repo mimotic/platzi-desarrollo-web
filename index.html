@@ -14,20 +14,22 @@
 		<h2>An awesome way to see the weather</h2>
 	</header>
 
+	<div class="loader">Geolocalizando tu posicion, por favor espere...</div>
+
 	<main class="weather-cards-group">
 
 		<template id="template--city">
 
-			<div class="weather-card">
+			<div class="weather-card fuente-blanco">
 				<header class="weather-card__header">
-					<h3 class="weather-card__title"></h3>
-					<h4 class="weather-card__date"></h4>
+					<h3 data-city class="weather-card__title"></h3>
+					<h4 data-date class="weather-card__date"></h4>
 				</header>
 				<div class="weather-card__info">
-					<img src="" alt="" class="weather-card_image">
-					<span class="weather-card__maxt"></span>
-					<span class="weather-card__mint"></span>
-					<span class="weather-card__temp"></span>
+					<img data-icon src="" alt="" class="weather-card_image">
+					<span data-temp="max" class="weather-card__maxt"></span>
+					<span data-temp="min" class="weather-card__mint"></span>
+					<span data-temp="current" class="weather-card__temp"></span>
 				</div>
 			</div>
 
