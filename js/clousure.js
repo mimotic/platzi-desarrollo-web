@@ -28,7 +28,7 @@ var contador = (function(){
 		valor: function(){
 			return _contadorPrivado;
 		}
-	}
+	};
 })();
 
 console.log(contador.valor());

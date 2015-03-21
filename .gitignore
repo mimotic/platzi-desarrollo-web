@@ -1,0 +1,11 @@
+
+.npm-debug.log
+tmp
+
+
+bower.json
+component.json
+bower_components
+
+node_modules
+npm-debug.log
