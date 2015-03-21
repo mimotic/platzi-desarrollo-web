@@ -44,7 +44,7 @@
 			//1: permiso denegado
 			//2: posicion no disponible
 			//3: timeout
-		};
+		}
 
 		function getCoords(position){
 			var lat = position.coords.latitude;
@@ -52,7 +52,7 @@
 			console.log('Tu posicion es: ' + lat + ", " + lon);
 
 			$.getJSON(API_WEATHER_URL+ "lat=" + lat + "&lon=" + lon, getCurrentWeather);
-		};
+		}
 
 		function getCurrentWeather(data){
 			cityWeather.zone = data.name;
@@ -64,12 +64,12 @@
 
 			//render
 			renderTemplate(cityWeather);
-		};
+		}
 
 		function activateTemplate(id){
 			var t = document.querySelector(id);
 			return document.importNode(t.content, true);
-		};
+		}
 
 		function renderTemplate(cityWeather, localtime){
 			var clone = activateTemplate("#template--city");
@@ -90,13 +90,13 @@
 
 			$($loader).hide();
 			$($body).append(clone);
-		};
+		}
 
 
 		function addNewCity(event){
 			event.preventDefault();
 			$.getJSON(API_WEATHER_URL + "q=" + $(nombreNuevaCiudad).val(), getWeatherNewCity);
-		};
+		}
 
 		function getWeatherNewCity(data){
 
@@ -119,7 +119,7 @@
 
 				console.log(localStorage);
 			});
-		};
+		}
 
 		function loadSavedCities(event){
 			event.preventDefault();
@@ -128,12 +128,12 @@
 				cities.forEach(function(city){
 					renderTemplate(city);
 				});
-			};
+			}
 
 			var cities = JSON.parse(localStorage.getItem("cities"));
 			renderCities(cities);
 
-		};
+		}
 
 	}else{
 		alert('Tu navegador no soporta geolocalizacion, actualizate!');
